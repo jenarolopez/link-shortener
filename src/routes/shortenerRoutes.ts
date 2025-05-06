@@ -4,7 +4,7 @@ import { urlMap } from '../db';
 import { logAnalytics } from '../model/analytics';
 
 // Create analytics queue
-const analyticsQueue = new Queue('analytics', {
+export const analyticsQueue = new Queue('analytics', {
     redis: {
       host: 'localhost',
       port: 6379,
